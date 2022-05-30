@@ -1,0 +1,19 @@
+.base-ball {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.container {
+    background-color: gainsboro;
+    width: 200px;
+    height: 200px;
+    border-radius: 18px;
+    border: 1px solid black;
+}
+
+.base-stick {
+    background-color: #000000;
+}

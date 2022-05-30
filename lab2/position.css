@@ -1,0 +1,37 @@
+.relative-position {
+    position: relative;
+}
+
+.first-pos-stick {
+    left: 80px;
+    top: 27px;
+    height: 8px;
+    width: 80px;
+}
+
+.second-pos-stick {
+    left: 95px;
+    top: -60px;
+    height: 110px;
+    width: 8px;
+}
+
+.first-pos-ball {
+    left: 90px;
+    top: 10px;
+}
+
+.second-pos-ball {
+    left: 170px;
+    top: 75px;
+}
+
+.third-pos-ball {
+    left: 90px;
+    top: 140px;
+}
+
+.fourth-pos-ball {
+    left: 10px;
+    top: 40px;
+}

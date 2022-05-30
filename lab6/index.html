@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="Макаревич, лабораторна робота, Oснови-WEB">
+  <meta name="description" content="Лабораторна робота №1 студента групи ІТ-93 Макаревича Олександра">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Макаревич О.М. ІТ-93, лаб. робота №1, варіант №27</title>
+</head>
+<body>
+  <div class="formbox">
+    <h2>Personal Info</h2>
+    <form>
+      <div class="inputbox">
+        <input type="text" id="name-input" name="fullName" required>
+        <label>Full name</label>
+      </div>
+      <div class="inputbox">
+        <input type="text" id="id-card-input" name="idCard" required>
+        <label>Id card</label>
+      </div>
+      <div class="inputbox">
+      <input type="date" id="date-input" name="birthDate">
+      <label>Birth date</label>
+      </div>
+      <div class="inputbox">
+        <input type="text" id="address-input" name="address" required>
+        <label>Address</label>
+      </div>
+      <div class="inputbox">
+        <input type="text" id="email-input" name="email" required>
+        <label>Email</label>
+      </div>
+      <input class="submit-button" type="submit" value="Save">
+    </form>
+  </div>
+  <table id="number-table">
+  </table>
+  <input type="color" id="click-color-input">
+  <input type="color" id="doubleclick-color-input">
+  <div>
+  <div class="info">
+    <p id="fullNameInfo"></p>
+    <p id="idCardInfo"></p>
+    <p id="birthDateInfo"></p>
+    <p id="addressInfo"></p>
+    <p id="emailInfo"></p>
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>

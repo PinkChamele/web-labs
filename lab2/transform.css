@@ -1,0 +1,27 @@
+.first-trans-ball {
+    transform: translate(90px, 10px);
+}
+
+.second-trans-ball {
+    transform: translate(170px, 75px);
+}
+
+.third-trans-ball {
+    transform: translate(90px, 140px);
+}
+
+.fourth-trans-ball {
+    transform: translate(10px, 40px);
+}
+
+.first-trans-stick {
+    transform: translate(80px, 27px);
+    height: 8px;
+    width: 80px;
+}
+
+.second-trans-stick {
+    transform: translate(95px, -60px);
+    height: 110px;
+    width: 8px;
+}
