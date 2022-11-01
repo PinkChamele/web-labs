@@ -1,0 +1,34 @@
+#picture {
+  --upscale: 0%;
+  width: calc(50% + var(--upscale));
+  min-width: 0%;
+  max-width: 100%;
+}
+
+.blue-background {
+  background-color: blue;
+}
+
+.yellow-background {
+  background-color: yellow;
+}
+
+.animated {
+  transition: 1s;
+}
+
+.not-displayed {
+  display: none;
+}
+
+.default-display {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}

@@ -4,49 +4,56 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="keywords" content="Макаревич, лабораторна робота, Oснови-WEB">
-  <meta name="description" content="Лабораторна робота №1 студента групи ІТ-93 Макаревича Олександра">
+  <meta name="description" content="Лабораторна робота №5 студента групи ІТ-93 Макаревича Олександра">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Макаревич О.М. ІТ-93, лаб. робота №1, варіант №27</title>
+  <title>Макаревич О.М. ІТ-93, лаб. робота №5, варіант №27</title>
 </head>
 <body>
-  <h2>Макаревич Олександр Макаревич</h2>
-  <p>Місце народження: 24 вересня, 2002 року, м. Кропивницький<p>
-  <a href="http://nauklit.kr.ua/index.php">Ліцей «Науковий»</a> Міської ради міста Кропивницького» (корпус ЦДПУ ім. В. Винниченка)<br>
-  <a href="https://kpi.ua/">Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"</a> м. Київ (з 2019 р.)</p>
-  <p>Хоббі:
-    <ul>
-      <li>Програмування;</li>
-      <li>Велоспорт;</li>
-      <li id="eighth">Серіали;</li>
-      <li id="ninth">Комп'ютерні ігри;</li>
-    </ul>
-  </p>
-  <p>Улюбленні фільми:
-    <ol>
-      <li><a href="https://www.youtube.com/watch?v=kh2aOe7NtmQ">Тенет;</a></li>
-      <li><a href="https://www.youtube.com/watch?v=Axm80-JXb8Q">Анігіляція;</a></li>
-      <li><a href="https://www.youtube.com/watch?v=GEtc18alaAE">Не дивись вгору;</a></li>
-      <li><a href="https://www.youtube.com/watch?v=Ljzu52GMytk">Дюна;</a></li>
-      <li><a href="https://www.youtube.com/watch?v=kIfXARxHOjo">Гравітація;</a></li>
-    </ol>
-  </p>
-  <p> Київ — столиця та найбільше місто України, одне з найбільших і найстаріших міст Європи. Розташований у середній течії Дніпра, у північній Наддніпрянщині.</p>
-	<p>За «Повістю минулих літ», Київ заснував полянський князь Кий зі своїми братами Щеком і Хоривом та сестрою Либіддю.
-	Згідно з археологічними даними та писемними джерелами, початок безперервного розвитку Києва датується 2-ю половиною V
-	ст. — 1-ю половиною VI ст.</p>
-	<a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%B8%D1%97%D0%B2">
-	  <img class="animated" alt="Світлина Києва" id="picture"
-      src="https://eimg.pravda.com/images/doc/9/5/95b561c-kiev-karantin.jpg">
-	</a>
-  <input type="file" id="file-input" accept="image/*"
-    class="not-displayed" onchange="handleFile(this.files)">
+  <div class="formbox">
+    <h2>Personal Info</h2>
+    <form>
+      <div class="inputbox">
+        <input type="text" id="name-input" name="fullName" required>
+        <label>Full name</label>
+      </div>
+      <div class="inputbox">
+        <input type="text" id="id-card-input" name="idCard" required>
+        <label>Id card</label>
+      </div>
+      <div class="inputbox">
+      <input type="date" id="date-input" name="birthDate">
+      <label>Birth date</label>
+      </div>
+      <div class="inputbox">
+        <input type="text" id="address-input" name="address" required>
+        <label>Address</label>
+      </div>
+      <div class="inputbox">
+        <input type="text" id="email-input" name="email" required>
+        <label>Email</label>
+      </div>
+      <input class="submit-button" type="submit" value="Save">
+    </form>
+  </div>
+  <table id="number-table">
+  </table>
+  <input type="color" id="click-color-input">
+  <input type="color" id="doubleclick-color-input">
   <div>
-    <button id="add-button">Додати</button>
-    <button id="increase-button">Збільшити</button>
-    <button id="reduce-button">Зменшити</button>
-    <button id="delete-button">Видалити</button>
+  <div class="info">
+    <p id="fullNameInfo"></p>
+    <p id="idCardInfo"></p>
+    <p id="birthDateInfo"></p>
+    <p id="addressInfo"></p>
+    <p id="emailInfo"></p>
   </div>
 </body>
+<script src="./utils/get-rand-color.js"></script>
+<script src="./entities/cell.js"></script>
+<script src="./entities/row.js"></script>
+<script src="./entities/table-builder.js"></script>
+<script src="./entities/field-entry.js"></script>
+<script src="./entities/form.js"></script>
 <script src="./script.js"></script>
 </html>

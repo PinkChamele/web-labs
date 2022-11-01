@@ -1,34 +1,116 @@
-#picture {
-  --upscale: 0%;
-  width: calc(50% + var(--upscale));
-  min-width: 0%;
-  max-width: 100%;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: flex-start;
 }
 
-.blue-background {
-  background-color: blue;
+.formbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
-.yellow-background {
-  background-color: yellow;
+.info {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px rgb(154, 154, 154);
 }
 
-.animated {
-  transition: 1s;
-}
-
-.not-displayed {
-  display: none;
-}
-
-.default-display {
-  display: block;
-
-}
-h2 {
+.formbox h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
-a {
-  text-decoration: none;
+.inputbox {
+  position: relative;
+}
+
+.inputbox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  outline: none;
+  background: transparent;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  pointer-events: none;
+  transition: .5s;
+}
+
+input[type="date"] ~ label, input:focus ~ label, input:valid ~ label {
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+}
+
+.not-valid {
+  border-bottom-color: red !important;
+  background: linear-gradient(white, rgb(255, 211, 211)) !important;
+}
+
+input[type="color"] {
+  visibility: hidden;
+  height: 0px;
+}
+
+#number-table td {
+  padding: 5px;
+  border: 0.5px solid black;
+}
+
+#number-table {
+  border-spacing: 0;
+  border: 0.5px solid black;
+}
+
+:root {
+  --row-color: white;
+}
+
+.colorisedRow {
+  background-color: var(--row-color) !important;
+}
+
+.submit-button {
+  margin-left: 30%;
+  width: 150px;
+  height: 30px;
+  background: black;
+  color: #fff;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgb(154, 154, 154);
+  text-shadow: none;
+  transition: 1s;
+}
+
+.disabled {
+  background: rgb(255, 255, 255) !important;
+  color: black !important;
+  box-shadow: none;
+  transition: 1s;
+}
+
+.submit-button:hover {
+  transition: 2s;
+  box-shadow: 15px 15px 15px rgb(154, 154, 154);
 }
